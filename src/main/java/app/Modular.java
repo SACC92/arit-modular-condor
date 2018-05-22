@@ -19,15 +19,15 @@ public class Modular {
     public static int[][] tabla(int x, String tipo){
         int[][] tab = new int[x][x];
         for (int i=0; i<x; i++){
-                for (int j=0; j<x; j++){
-                    if (tipo.equals("+")){
-                        tab[i][j]=(i*j)%x;
-                    }
-                    if (tipo.equals("*")){
-                        tab[i][j]=(i*j)%x;
-                    }
+            for (int j=0; j<x; j++){
+                if (tipo.equals("+")){
+                    tab[i][j]=(i+j)%x;
+                }
+                if (tipo.equals("*")){
+                    tab[i][j]=(i*j)%x;
                 }
             }
+        }
         return tab;
     }
 }
