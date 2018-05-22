@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+import app.Modular;
 import org.junit.Assert;
 import org.junit.Test;
 import static org.junit.Assert.*;
